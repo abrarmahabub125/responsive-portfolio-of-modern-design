@@ -1,240 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modeern Portfolio Website</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- ======================= background overlay content ======================== -->
-    <div class="parent"><div class="magicpattern"></div></div>
+<html lang="en" class="scroll-smooth">
 
-    <!-- ======================= Header Section start ======================== -->
-    <header class="fixed top-8 left-[50%] translate-x-[-50%] z-50">
-      <nav
-        class="px-12 py-3 min-w-md rounded-full border border-gray-200 backdrop-blur-3xl"
-      >
-        <ul class="flex gap-8 sm:justify-between items-center">
-          <li
-            class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950"
-          >
-            Home
-          </li>
-          <li
-            class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950"
-          >
-            Portfolio
-          </li>
-          <li
-            class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950"
-          >
-            About Me
-          </li>
-          <li
-            class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950"
-          >
-            Contact
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- ======================= Header Section end ========================== -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modeern Portfolio Website</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <!-- ======================= Main Section Start ========================== -->
-    <main class="w-full">
-      <div class="relative">
-        <!-- ============================ Header section start =============================-->
-        <div class="flex justify-between xl:px-30 xl:pt-10 sm:pt-26 sm:px-8">
-          <div>
-            <span class="text-[1.7rem] font-bold text-gray-900">Ribal</span>
-            <span class="text-[1.7rem] font-bold text-gray-500">Sh.</span>
-          </div>
-          <div>
-            <a
-              href="#"
-              class="flex gap-2 items-center px-4 py-2 bg-black rounded-full hover:bg-gray-900 transition"
-            >
-              <span class="text-white text-sm font-medium">Get In Touch</span>
-              <span
-                class="h-6 w-6 bg-white rounded-full flex justify-center items-center"
-              >
-                <svg
-                  class="h-5 w-5 stroke-black -rotate-25"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
+<body>
+  <!-- ======================= background overlay content ======================== -->
+  <div class="parent">
+    <div class="magicpattern"></div>
+  </div>
+
+  <!-- ======================= Header Section start ======================== -->
+  <header id="menu"
+    class="fixed hidden md:block md:translate-x-[-50%] top-10 md:top-2 md:left-[50%] w-full md:w-fit z-40 md:border md:border-gray-200 md:rounded-full">
+    <nav class="backdrop-blur-3xl md:rounded-full md:px-6 xl:px-8 md:py-1 mx-4 md:mx-0">
+      <ul class="flex flex-col md:flex-row gap-4 lg:gap-8 justify-between items-center py-4 md:py-2">
+        <li
+          class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950">
+          <a href="#">Home</a>
+        </li>
+        <li
+          class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950">
+          Portfolio
+        </li>
+        <li
+          class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950">
+          <a href="#about-me">About Me</a>
+        </li>
+        <li
+          class="text-base font-medium text-gray-700 hover:text-neutral-950 transition-colors hover:cursor-pointer focus:text-neutral-950">
+          <a href="#contact-me">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ======================= Header Section end ========================== -->
+
+  <!-- ======================= Main Section Start ========================== -->
+  <main class="w-full">
+    <div class="relative">
+      <!-- ============================ Header section start =============================-->
+      <div
+        class="flex justify-between fixed top-0 left-0 z-50 backdrop-blur-3xl md:backdrop-blur-none md:static w-full px-4 py-2 md:py-3 md:px-8 lg:px-14 xl:px-30 items-center">
+        <div>
+          <span class="text-[1.4rem] md:text-[1.6rem] xl:text-[1.7rem] font-bold text-gray-900">Ribal</span>
+          <span class="text-[1.4rem] md:text-[1.6rem] xl:text-[1.7rem] font-bold text-gray-900">Sh.</span>
         </div>
-        <!-- ============================ Header section End =============================-->
 
-        <!-- ============================ Profile section start =============================-->
-        <div class="sm:px-8 xl:p-30">
-          <div class="w-full flex flex-col items-center">
-            <div
-              class="xl:h-64 sm:h-56 xl:w-64 sm:w-56 p-2 rounded-full border-gray-300 shadow bg-gray-50 relative"
-            >
-              <img
-                class="h-full w-full object-left-top object-cover rounded-full"
-                src="./assets/man-image.jpg"
-                alt="image"
-              />
-            </div>
-            <div>
-              <div class="mt-5 flex gap-2 justify-center">
-                <p
-                  class="sm:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full"
-                >
-                  Product Desig
-                </p>
-                <p
-                  class="sm:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full"
-                >
-                  UI/UX Design
-                </p>
-                <p
-                  class="sm:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full"
-                >
-                  Web Design
-                </p>
-              </div>
-              <div class="text-center">
-                <h1
-                  class="sm:text-5xl xl:text-6xl font-bold text-gray-900 mt-7"
-                >
-                  <span class="text-gray-600">Ribal</span>
-                  Shamseddine
-                </h1>
-                <p
-                  class="text-lg mt-4 font-normal text-gray-500 tracking-tight"
-                >
-                  8+ years of experience designing digital products that scale,
-                  from MVPs to platforms used by thousands.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="sm:max-h-[32rem] xl:max-h-[45rem] grid grid-rows-2 grid-cols-2 gap-3 rounded-2xl mt-14"
-            >
-              <div class="bg-gray-200 row-span-3 rounded-2xl">
-                <video
-                  class="rounded-2xl h-[95%] w-[96%] object-cover -rotate-3"
-                  src="https://video-previews.elements.envatousercontent.com/h264-video-previews/c259d5a8-1599-4db8-8945-3afe7a470777/55294911.mp4"
-                  autoplay
-                  muted
-                  loop
-                ></video>
-              </div>
-              <div class="bg-gray-200 rounded-2xl p-2">
-                <img
-                  class="rounded-2xl h-full w-full object-cover"
-                  src="https://framerusercontent.com/images/8w3Ddnqp5I8w5lPFZ7UvykPj5xw.png?scale-down-to=1024&width=1326&height=627"
-                  alt="image"
-                />
-              </div>
-              <div class="bg-gray-200 col-start-2 rounded-2xl p-2">
-                <img
-                  class="rounded-2xl h-full w-full object-cover"
-                  src="https://framerusercontent.com/images/1gapW3UbYb2Fm7069UCSidon0.png?scale-down-to=1024&width=1326&height=627"
-                  alt="image"
-                />
-              </div>
-            </div>
+        <div class="flex items-center gap-5">
+          <div class="md:hidden">
+            <button id="menu-btn"
+              class="size-8 bg-gray-100 rounded-full flex justify-center items-center hover:bg-gray-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 stroke-gray-600">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+              </svg>
+            </button>
           </div>
+          <a href="#" class="flex gap-2 items-center px-2 py-2 bg-black rounded-full hover:bg-gray-900 transition">
+            <span class="text-white text-xs md:text-sm md:ml-1 xl:text-base font-medium">Get In Touch</span>
+            <span class="h-4 w-4 md:h-6 md:w-6 bg-white rounded-full flex justify-center items-center">
+              <svg class="size-3 md:size-5 stroke-black -rotate-25" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </span>
+          </a>
         </div>
-        <!-- ============================ Profile section End =============================-->
+      </div>
+      <!-- ============================ Header section End =============================-->
 
-        <!-- ============================ About section start =============================-->
-        <div
-          class="sm:px-8 xl:px-30 py-16 flex sm:flex-col xl:flex-row justify-between items-start gap-8"
-        >
-          <div>
-            <h1
-              class="sm:static xl:sticky xl:top-20 xl:min-w-xs text-4xl font-semibold text-gray-800"
-            >
-              About Me
-            </h1>
-          </div>
-          <div>
-            <p class="text-lg text-gray-500 xl:mb-16 sm:mb-10 leading-8">
-              With over 8 years of experience as a Product Designer, I've shaped
-              digital products for both startups and established companies. My
-              career began in graphic design, where I developed a strong eye for
-              aesthetics and user-centered design. As I transitioned into
-              product design, I focused on creating seamless user experiences
-              that drive engagement and business growth.
-            </p>
-            <p
-              class="text-lg text-gray-500 xl:mb-16 sm:mb-10 leading-8 tracking-tight"
-            >
-              I've worked across industries like FinTech, eCommerce, Foodtech
-              gaining a deep understanding of designing for different user needs
-              while ensuring business goals are met. From MVPs to fully
-              operational platforms, I take a data-driven and user-centered
-              approach to every project.
-            </p>
-            <p
-              class="text-lg text-gray-500 xl:mb-16 sm:mb-10 leading-8 tracking-tight"
-            >
-              I've led design systems, developed product strategies, and
-              collaborated with teams to bring ideas from concept to reality.
-            </p>
-            <p
-              class="text-lg text-gray-500 xl:mb-16 sm:mb-10 leading-8 tracking-tight"
-            >
-              In recent years, I've helped startups achieve milestones, from
-              building MVPs to launching products that generated millions in
-              revenue and attracted thousands of users. I'm passionate about
-              creating impactful digital experiences that drive success. Growth
-              I focus on designing products that drive real business growth —
-              from scalable design systems to user experiences that convert and
-              retain customers. Every project is an opportunity to build lasting
-              impact through design. 25+ Products Designed
-            </p>
-          </div>
-        </div>
-        <!-- ============================ About section End =============================-->
-
-        <!-- ============================ Growth section start =============================-->
-        <div class="sm:px-8 xl:px-30">
+      <!-- ============================ Profile section start =============================-->
+      <div class="p-4 mt-32 md:mt-12 md:px-8 lg:px-14 xl:px-30">
+        <div class="w-full flex flex-col items-center">
           <div
-            class="min-h-[600px] lg:min-h-[300px] grid sm:grid-cols-4 sm:grid-rows-7 xl:grid-cols-7 xl:grid-rows-4 gap-2 bg-gray-100 p-4 rounded-2xl"
-          >
-            <div
-              class="sm:col-span-4 sm:row-span-3 xl:col-span-3 xl:row-span-4 bg-[#464646] rounded-2xl"
-            >
-              <div class="p-12">
-                <div class="flex gap-6 items-center">
-                  <img
-                    class="h-8 w-8 object-cover rounded-full"
-                    src="assets/growth_icon.png"
-                    alt="logo"
-                  />
-                  <h1 class="text-4xl text-white font-medium">Growth</h1>
+            class="h-48 w-48 md:h-52 md:w-52 xl:h-60 xl:w-60 p-2 rounded-full border-gray-300 shadow bg-gray-50 relative">
+            <img class="h-full w-full object-left-top object-cover rounded-full" src="./assets/man-image.jpg"
+              alt="image" />
+          </div>
+          <div>
+            <div class="mt-5 flex gap-2 justify-center">
+              <p
+                class="text-xs md:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full">
+                Product Desig
+              </p>
+              <p
+                class="text-xs md:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full">
+                UI/UX Design
+              </p>
+              <p
+                class="text-xs md:text-sm xl:text-base font-medium text-gray-600 px-3 py-1 border bg-gray-100 border-gray-200 rounded-full">
+                Web Design
+              </p>
+            </div>
+            <div class="text-center">
+              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-7">
+                <span class="text-gray-600">Ribal</span>
+                Shamseddine
+              </h1>
+              <p class="text-sm md:text-base mt-4 font-normal text-gray-500 tracking-tight">
+                8+ years of experience designing digital products that scale,
+                from MVPs to platforms used by thousands.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="md:max-h-[56rem] h-fit grid grid-cols-1 md:grid-cols-2 grid-rows-3 md:grid-rows-[400px_300px] gap-4 rounded-2xl mt-14">
+            <div class="bg-gray-200 rounded-2xl md:col-span-2">
+              <video class="rounded-2xl h-[95%] w-[96%] object-cover -rotate-3"
+                src="https://video-previews.elements.envatousercontent.com/h264-video-previews/c259d5a8-1599-4db8-8945-3afe7a470777/55294911.mp4"
+                autoplay muted loop></video>
+            </div>
+            <div class="bg-gray-200 rounded-2xl p-1 md:p-3">
+              <img class="rounded-xl h-full w-full object-cover"
+                src="https://framerusercontent.com/images/8w3Ddnqp5I8w5lPFZ7UvykPj5xw.png?scale-down-to=1024&width=1326&height=627"
+                alt="image" />
+            </div>
+            <div class="bg-gray-200 rounded-2xl p-1 md:p-3">
+              <img class="rounded-xl h-full w-full object-cover"
+                src="https://framerusercontent.com/images/1gapW3UbYb2Fm7069UCSidon0.png?scale-down-to=1024&width=1326&height=627"
+                alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Profile section End =============================-->
+
+      <!-- ============================ About section start =============================-->
+      <div id="about-me"
+        class="px-4 my-12 flex flex-col items-center md:items-start md:px-8 md:my-20 lg:px-14 lg:flex-row lg:gap-4 lg:my-14 xl:px-30 xl:my-30">
+        <div class="lg:min-w-60">
+          <h1 class="text-3xl lg:text-4xl font-semibold mb-4 md:mb-6 lg:text-nowrap">
+            About Me
+          </h1>
+        </div>
+        <div>
+          <p class="text-sm md:text-base font-medium text-gray-600 text-justify mb-6">
+            With over 8 years of experience as a Product Designer, I've shaped
+            digital products for both startups and established companies. My
+            career began in graphic design, where I developed a strong eye for
+            aesthetics and user-centered design. As I transitioned into
+            product design, I focused on creating seamless user experiences
+            that drive engagement and business growth.
+          </p>
+          <p class="text-sm md:text-base font-medium text-gray-600 text-justify tracking-tight  mb-6">
+            I've worked across industries like FinTech, eCommerce, Foodtech
+            gaining a deep understanding of designing for different user needs
+            while ensuring business goals are met. From MVPs to fully
+            operational platforms, I take a data-driven and user-centered
+            approach to every project.
+          </p>
+          <p class="text-sm md:text-base font-medium text-gray-600 text-justify tracking-tight  mb-6">
+            I've led design systems, developed product strategies, and
+            collaborated with teams to bring ideas from concept to reality.
+          </p>
+          <p class="text-sm md:text-base font-medium text-gray-600 text-justify tracking-tight  mb-6">
+            In recent years, I've helped startups achieve milestones, from
+            building MVPs to launching products that generated millions in
+            revenue and attracted thousands of users. I'm passionate about
+            creating impactful digital experiences that drive success. Growth
+            I focus on designing products that drive real business growth —
+            from scalable design systems to user experiences that convert and
+            retain customers. Every project is an opportunity to build lasting
+            impact through design. 25+ Products Designed
+          </p>
+        </div>
+      </div>
+      <!-- ============================ About section End =============================-->
+
+      <!-- ============================ Growth section start =============================-->
+      <div class="px-4 my-12 md:my-20 lg:px-14 xl:px-30">
+        <div
+          class="max-h-[1500px] grid grid-cols-1 grid-rows-[minmax(400px,1fr)_repeat(4,minmax(208px, 260px))] md:grid-rows-[minmax(500px,1fr)_repeat(2,minmax(208px, 260px))] md:grid-cols-2 lg:grid-cols-[500px_1fr_1fr] lg:grid-rows-2 xl:min-h-[600px] xl:grid-cols-[600px_1fr_1fr] xl:grid-rows-2 gap-3 bg-gray-200 p-2 h-fit rounded-3xl">
+          <div class="bg-[#464646] rounded-2xl md:col-span-2 lg:row-span-2 lg:col-span-1 xl:col-span-1 xl:row-span-2">
+            <div class="p-6 h-full flex flex-col justify-between">
+              <div>
+                <div class="flex gap-4 items-center">
+                  <img class="size-7 object-cover rounded-full md:size-9" src="assets/growth_icon.png" alt="logo" />
+                  <h1 class="text-3xl text-white font-medium md:text-4xl">Growth</h1>
                 </div>
-                <p
-                  class="mt-8 text-lg tracking-tight text-gray-400 font-medium"
-                >
+                <p class="mt-4 text-sm tracking-tight text-gray-400 font-medium md:text-base text-justify xl:text-lg/7">
                   I focus on designing products that drive real business growth
                   from scalable design systems to user experiences that convert
                   and retain customers.
@@ -243,1130 +198,714 @@
                     through design.
                   </span>
                 </p>
-                <div class="flex justify-between items-end mt-40">
-                  <div class="flex gap-14">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4 stroke-1 stroke-gray-400"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4 stroke-1 stroke-gray-400"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4 stroke-1 stroke-gray-400"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                  </div>
-                  <img
-                    class="h-36 w-36 rounded-2xl shadow"
-                    src="assets/man-image.jpg"
-                    alt="image"
-                  />
+              </div>
+
+              <div class="flex flex-row justify-between gap-y-8 items-end mt-8">
+                <div class="flex gap-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-4 md:size-5 lg:size-7 stroke-1 stroke-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-4 md:size-5 lg:size-7 stroke-1 stroke-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-4 md:size-5 lg:size-7 stroke-1 stroke-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
                 </div>
+                <img class="size-28 object-cover rounded-2xl shadow md:size-36 xl:size-56" src="assets/man-image.jpg"
+                  alt="image" />
               </div>
-            </div>
-            <!-- growth card 2 -->
-            <div
-              class="sm:col-span-2 sm:row-span-2 sm:row-start-4 xl:col-span-2 xl:row-span-2 xl:col-start-4 bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between"
-            >
-              <div class="">
-                <h1 class="text-5xl">25+</h1>
-                <p class="mt-4 text-lg font-medium">Products Designed</p>
-              </div>
-              <p class="text-base font-medium text-gray-500">
-                From SaaS platforms to e-commerce and mobile apps.
-              </p>
-            </div>
-
-            <!-- growth card 3 -->
-            <div
-              class="sm:col-span-2 sm:row-span-2 sm:col-start-3 sm:row-start-4 xl:col-span-2 xl:row-span-2 xl:col-start-6 bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between"
-            >
-              <div class="">
-                <h1 class="text-5xl">8 Year +</h1>
-                <p class="mt-4 text-lg font-medium">
-                  Experience in Product Design
-                </p>
-              </div>
-              <p class="text-base font-medium text-gray-500">
-                Delivering end-to-end design across startups and scale-ups.
-              </p>
-            </div>
-
-            <!-- growth card 4 -->
-            <div
-              class="sm:col-span-2 sm:row-span-2 sm:row-start-6 xl:col-span-2 xl:row-span-2 xl:col-start-4 xl:row-start-3 bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between"
-            >
-              <div class="">
-                <h1 class="text-5xl">95%</h1>
-                <p class="mt-4 text-lg font-medium">
-                  Positive Stakeholder Feedback
-                </p>
-              </div>
-              <p class="text-base font-medium text-gray-500">
-                Consistently high ratings from teams, PMs, and engineers.
-              </p>
-            </div>
-
-            <!-- growth card 5 -->
-            <div
-              class="sm:col-span-2 sm:row-span-2 sm:col-start-3 sm:row-start-6 xl:col-span-2 xl:row-span-2 xl:col-start-6 xl:row-start-3 bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between"
-            >
-              <div class="">
-                <h1 class="text-5xl">15+</h1>
-                <p class="mt-4 text-lg font-medium">
-                  Design & Dev Tools Mastered
-                </p>
-              </div>
-              <p class="text-base font-medium text-gray-500">
-                Figma, Webflow, Shopify, Illustrator, After Effects, and more.
-              </p>
             </div>
           </div>
+          <!-- growth card 2 -->
+          <div class=" bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h1 class="text-4xl font-semibold xl:text-5xl">25+</h1>
+              <p class="mt-6 text-base font-semibold md:text-lg xl:text-xl">Products Designed</p>
+            </div>
+            <p class="text-sm text-justify mt-3 font-medium text-gray-500 md:text-base xl:text-lg">
+              From SaaS platforms to e-commerce and mobile apps.
+            </p>
+          </div>
+
+          <!-- growth card 3 -->
+          <div class=" bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h1 class="text-4xl font-semibold xl:text-5xl">8 Year +</h1>
+              <p class="mt-6 text-base font-semibold md:text-lg xl:text-xl">
+                Experience in Product Design
+              </p>
+            </div>
+            <p class="text-sm text-justify mt-3 font-medium text-gray-500 md:text-base xl:text-lg">
+              Delivering end-to-end design across startups and scale-ups.
+            </p>
+          </div>
+
+          <!-- growth card 4 -->
+          <div class=" bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h1 class="text-4xl font-semibold xl:text-5xl">95%</h1>
+              <p class="mt-6 text-base font-semibold md:text-lg xl:text-xl">
+                Positive Stakeholder Feedback
+              </p>
+            </div>
+            <p class="text-sm text-justify mt-3 font-medium text-gray-500 md:text-base xl:text-lg">
+              Consistently high ratings from teams, PMs, and engineers.
+            </p>
+          </div>
+
+          <!-- growth card 5 -->
+          <div class=" bg-gray-50 shadow p-8 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h1 class="text-4xl font-semibold xl:text-5xl">15+</h1>
+              <p class="mt-6 text-base font-semibold md:text-lg xl:text-xl">
+                Design & Dev Tools Mastered
+              </p>
+            </div>
+            <p class="text-sm text-justify mt-3 font-medium text-gray-500 md:text-base xl:text-lg">
+              Figma, Webflow, Shopify, Illustrator, After Effects, and more.
+            </p>
+          </div>
         </div>
-        <!-- ============================ Growth section End =============================-->
+      </div>
+      <!-- ============================ Growth section End =============================-->
 
-        <!-- ============================ History section start =============================-->
-        <div class="sm:px-8 sm:py-30 xl:p-30">
-          <section class="flex sm:flex-col xl:flex-row gap-16 items-start">
-            <!-- Sticky title -->
-            <div
-              class="sm:static xl:sticky xl:top-20 xl:min-w-xs text-4xl font-semibold text-gray-800"
-            >
-              Work History
-            </div>
+      <!-- ============================ History section start =============================-->
+      <div
+        class="px-4 my-12 flex flex-col items-center md:items-start md:px-8 md:my-20 lg:px-14 lg:flex-row lg:gap-4 lg:my-14 xl:px-30 xl:my-30">
+        <section class="flex flex-col lg:flex-row gap-4 items-start">
+          <!-- Sticky title -->
+          <div
+            class="text-3xl w-full text-center lg:text-4xl lg:text-left lg:min-w-60 lg:max-w-60 font-semibold mb-4 lg:text-nowrap lg:sticky lg:top-20">
+            Work History
+          </div>
 
-            <!-- Scrollable cards -->
-            <div class="flex flex-col gap-6">
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl flex gap-6">
-                <div>
-                  <div
-                    class="h-20 w-20 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/cMJ1GozHHQ20hnGgm1c8fMLIyGg.png?width=141&height=141"
-                      alt=""
-                    />
-                  </div>
+          <!-- Scrollable cards -->
+          <div class="flex flex-col gap-6">
+            <!-- work history cards -->
+            <div class="p-4 border border-gray-300 rounded-xl flex flex-col gap-6">
+              <div class="flex gap-8 lg:gap-16">
+                <div class="h-14 w-14 border border-gray-300 p-2 rounded-xl bg-white md:h-16 md:w-16 lg:h-20 lg:w-20">
+                  <img class="h-full w-full object-cover"
+                    src="https://framerusercontent.com/images/cMJ1GozHHQ20hnGgm1c8fMLIyGg.png?width=141&height=141"
+                    alt="" />
                 </div>
-                <!-- sub details section  -->
                 <div>
-                  <div class="border-b pb-4 border-gray-300">
-                    <h2 class="text-black font-semibold">Tap Payments</h2>
-                    <p class="text-xs text-neutral-500 font-medium mt-1">
-                      Senior Product Designer
-                    </p>
-                    <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                      Mar 2024 - Present
-                    </p>
-                    <p class="text-sm/6 text-neutral-700 font-medium">
-                      Tap Payments streamlines payments across the MENA region
-                      and beyond, providing businesses with a seamless solution
-                      that integrates all popular regional and international
-                      payment methods securely. Serving over 100,000 businesses
-                      of all sizes, Tap Payments makes it easy for your
-                      customers to pay using their preferred methods through a
-                      single, unified integration.
-                    </p>
-                  </div>
-                  <div class="flex gap-3 flex-wrap pt-4">
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Footech</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Full Time</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Dubai, United Arab Emirates</span
-                    >
-                  </div>
+                  <h2 class="text-black md:text-lg font-semibold">Tap Payments</h2>
+                  <p class="text-xs md:text-sm text-neutral-500 font-medium mt-1 md:mt-0">
+                    Senior Product Designer
+                  </p>
+                  <p class="text-xs md:text-sm text-neutral-500 mt-2 font-medium">
+                    Mar 2024 - Present
+                  </p>
                 </div>
               </div>
-
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl flex gap-6">
-                <div>
-                  <div
-                    class="h-20 w-20 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/305hGv6qZyI44FJOBAFKDHPU4TM.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
+              <!-- sub details section  -->
+              <div class="lg:ml-36">
+                <div class="border-b pb-4 border-gray-300">
+                  <p class="text-sm/6 md:text-base text-neutral-700 font-medium text-justify">
+                    Tap Payments streamlines payments across the MENA region
+                    and beyond, providing businesses with a seamless solution
+                    that integrates all popular regional and international
+                    payment methods securely. Serving over 100,000 businesses
+                    of all sizes, Tap Payments makes it easy for your
+                    customers to pay using their preferred methods through a
+                    single, unified integration.
+                  </p>
                 </div>
-                <!-- sub details section  -->
-                <div>
-                  <div class="border-b pb-4 border-gray-300">
-                    <h2 class="text-black font-semibold">KASO</h2>
-                    <p class="text-xs text-neutral-500 font-medium mt-1">
-                      Product Designer
-                    </p>
-                    <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                      Mar 2022 - Apr 2024
-                    </p>
-                    <p class="text-sm/6 text-neutral-700 font-medium">
-                      KASO YC is an online B2B platform that facilitates order
-                      processing and communication between restaurants and
-                      suppliers.
-                    </p>
-                  </div>
-                  <div class="flex gap-3 flex-wrap pt-4">
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Footech</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Full Time</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Dubai, United Arab Emirates</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl flex gap-6">
-                <div>
-                  <div
-                    class="h-20 w-20 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/vXpnaaaXSZ0oFb8ntpjnW9YZT1M.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <!-- sub details section  -->
-                <div>
-                  <div class="border-b pb-4 border-gray-300">
-                    <h2 class="text-black font-semibold">Magma Global</h2>
-                    <p class="text-xs text-neutral-500 font-medium mt-1">
-                      UI/UX Designer
-                    </p>
-                    <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                      Dec 2020 - Mar 2022
-                    </p>
-                    <p class="text-sm/6 text-neutral-700 font-medium">
-                      Magma is a software solutions company that assists you in
-                      growing your business by developing websites and
-                      applications and transforming your creative ideas into a
-                      fundamental business in the market.
-                    </p>
-                  </div>
-                  <div class="flex gap-3 flex-wrap pt-4">
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Agency</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Full Time</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Dubai, United Arab Emirates</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl flex gap-6">
-                <div>
-                  <div
-                    class="h-20 w-20 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/CQOl0SejETSx603fjdnvyz4eiKM.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <!-- sub details section  -->
-                <div>
-                  <div class="border-b pb-4 border-gray-300">
-                    <h2 class="text-black font-semibold">
-                      Arab Federation of Capital Markets (AFCM)
-                    </h2>
-                    <p class="text-xs text-neutral-500 font-medium mt-1">
-                      Senior Visual Designer | UI/UX Designer
-                    </p>
-                    <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                      Jan 2020 - Dec 2020
-                    </p>
-                    <p class="text-sm/6 text-neutral-700 font-medium">
-                      The AFCM is the Arab industry group for 17 exchanges and 8
-                      Clearing houses (CSD’s), and multiple of affiliate members
-                      (financial institutions, brokerage firms) from all around
-                      the Arab regions (GCC, Levant, and Arab African
-                      countries). The Federation was set up to contribute to the
-                      “development of regulations and promoting harmonized and
-                      proactive legislations, and exchanging viewpoints and
-                      providing opportunities for cooperation among members.
-                    </p>
-                  </div>
-                  <div class="flex gap-3 flex-wrap pt-4">
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Fintech</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Full Time</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Lebanon</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl flex gap-6">
-                <div>
-                  <div
-                    class="h-20 w-20 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/ufjBn75UTReY1m7z7y5fboUiBM.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <!-- sub details section  -->
-                <div>
-                  <div class="border-b pb-4 border-gray-300">
-                    <h2 class="text-black font-semibold">SADER</h2>
-                    <p class="text-xs text-neutral-500 font-medium mt-1">
-                      Senior Graphic Designer
-                    </p>
-                    <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                      Apr 2019 - Jan 2020
-                    </p>
-                    <p class="text-sm/6 text-neutral-700 font-medium">
-                      SADER & Associates is a Lebanon-based law firm, founded in
-                      2003, with a progressive outlook on the region's legal
-                      significance. In a globalized age of interlocking, complex
-                      business structures and collaborations, our aim is to
-                      simplify and protect the interests of our clients, chiefly
-                      made up of multinational corporations who seek to do
-                      business in the Levant.
-                    </p>
-                  </div>
-                  <div class="flex gap-3 flex-wrap pt-4">
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Legal</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Full Time</span
-                    >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                      >Lebanon</span
-                    >
-                  </div>
+                <div class="flex gap-3 flex-wrap pt-4">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Footech</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Full
+                    Time</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Dubai,
+                    United Arab Emirates</span>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-        <!-- ============================ History section End =============================-->
 
-        <!-- ============================ Education section start =============================-->
-        <div class="sm:px-8 sm:py-20 xl:p-30">
-          <section class="flex sm:flex-col xl:flex-row gap-16 items-stretch">
-            <!-- Sticky title -->
-            <div
-              class="sm:static lg:sticky lg:top-20 h-max max-w-xs sm:max-w-xl xl:min-w-xs text-4xl font-semibold text-gray-800"
-            >
-              Education & Courses
-            </div>
-
-            <!-- Scrollable cards -->
-            <div class="flex flex-col gap-6 w-full">
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl">
-                <div class="flex gap-6">
-                  <div
-                    class="h-16 w-16 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/I8FuWmchGkIdO42iRslvmQBnM.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                  <div class="border-b pb-2 border-gray-300 w-full">
-                    <h2 class="text-black font-semibold">
-                      Lebanese International University
-                    </h2>
-                    <p class="text-sm text-neutral-500 font-medium mt-1">
-                      Design
-                    </p>
-                  </div>
+            <!-- work history cards -->
+            <div class="p-4 border border-gray-300 rounded-xl flex flex-col gap-6">
+              <div class="flex gap-8 lg:gap-16">
+                <div class="h-14 w-14 border border-gray-300 p-2 rounded-xl bg-white md:h-16 md:w-16 lg:h-20 lg:w-20">
+                  <img class="h-full w-full object-cover"
+                    src="https://framerusercontent.com/images/305hGv6qZyI44FJOBAFKDHPU4TM.png?width=122&height=122"
+                    alt="" />
                 </div>
                 <div>
-                  <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                    Oct 2017 - Feb 2020
+                  <h2 class="text-black md:text-lg font-semibold">KASO</h2>
+                  <p class="text-xs md:text-sm text-neutral-500 font-medium mt-1 md:mt-0">
+                    Product Designer
                   </p>
-                  <p class="text-sm text-neutral-700 font-medium">
-                    Completed a BA Certificate in Graphic Design and applied
-                    arts at Lebanese international university.
+                  <p class="text-xs md:text-sm text-neutral-500 mt-2 font-medium">
+                    Mar 2022 - Apr 2024
                   </p>
                 </div>
               </div>
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl">
-                <div class="flex gap-6">
-                  <div
-                    class="h-16 w-16 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/w37pkt2iPi81DdLCbuXD3orIIE.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                  <div class="border-b pb-2 border-gray-300 w-full">
-                    <h2 class="text-black font-semibold">Google</h2>
-                    <p class="text-sm text-neutral-500 font-medium mt-1">
-                      UX Design Certificate
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                    April 2021
-                  </p>
-                  <p class="text-sm text-neutral-700 font-medium">
-                    Completed a BA Certificate in Graphic Design and applied
-                    arts at Lebanese international university.
+              <!-- sub details section  -->
+              <div class="lg:ml-36">
+                <div class="border-b pb-4 border-gray-300">
+                  <p class="text-sm/6 md:text-base text-neutral-700 font-medium text-justify">
+                    KASO YC is an online B2B platform that facilitates order processing and communication between
+                    restaurants and suppliers.
                   </p>
                 </div>
-              </div>
-              <!-- work history cards -->
-              <div class="p-8 border border-gray-300 rounded-xl">
-                <div class="flex gap-6">
-                  <div
-                    class="h-16 w-16 border border-gray-300 p-2 rounded-2xl bg-whitel"
-                  >
-                    <img
-                      src="https://framerusercontent.com/images/DdHIqq8HkzC7ZJujwXaHtW70uk.png?width=122&height=122"
-                      alt=""
-                    />
-                  </div>
-                  <div class="border-b pb-2 border-gray-300 w-full">
-                    <h2 class="text-black font-semibold">
-                      Interaction Design Foundation
-                    </h2>
-                    <p class="text-sm text-neutral-500 font-medium mt-1">
-                      UX Design
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium">
-                    September 2021
-                  </p>
-                  <p class="text-sm text-neutral-700 font-medium">
-                    Completed a BA Certificate in Graphic Design and applied
-                    arts at Lebanese international university.
-                  </p>
+                <div class="flex gap-3 flex-wrap pt-4">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Footech</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Full
+                    Time</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Dubai,
+                    United Arab Emirates</span>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-        <!-- ============================ Education section End =============================-->
 
-        <!-- ============================ Skills section start =============================-->
-        <div class="sm:px-8 sm:py-30 xl:p-30">
-          <section class="flex sm:flex-col xl:flex-row gap-16 items-stretch">
-            <!-- Sticky title -->
-            <div
-              class="sm:static xl:sticky xl:top-20 h-max xl:min-w-xs text-4xl font-semibold text-gray-800"
-            >
-              Skill Set
+            <!-- work history cards -->
+            <div class="p-4 border border-gray-300 rounded-xl flex flex-col gap-6">
+              <div class="flex gap-8 lg:gap-16">
+                <div class="h-14 w-14 border border-gray-300 p-2 rounded-xl bg-white md:h-16 md:w-16 lg:h-20 lg:w-20">
+                  <img class="h-full w-full object-cover"
+                    src="https://framerusercontent.com/images/vXpnaaaXSZ0oFb8ntpjnW9YZT1M.png?width=122&height=122"
+                    alt="" />
+                </div>
+                <div>
+                  <h2 class="text-black md:text-lg font-semibold">Magma Global</h2>
+                  <p class="text-xs md:text-sm text-neutral-500 font-medium mt-1 md:mt-0">
+                    UI/UX Designer
+                  </p>
+                  <p class="text-xs md:text-sm text-neutral-500 mt-2 font-medium">
+                    Dec 2020 - Mar 2022
+                  </p>
+                </div>
+              </div>
+              <!-- sub details section  -->
+              <div class="lg:ml-36">
+                <div class="border-b pb-4 border-gray-300">
+                  <p class="text-sm/6 md:text-base text-neutral-700 font-medium text-justify">
+                    Magma is a software solutions company that assists you in growing your business by developing
+                    websites and applications
+                    and transforming your creative ideas into a fundamental business in the market.
+                  </p>
+                </div>
+                <div class="flex gap-3 flex-wrap pt-4">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Footech</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Full
+                    Time</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">
+                    Dubai, United Arab Emirates</span>
+                </div>
+              </div>
             </div>
 
-            <!-- Scrollable cards -->
-            <div class="flex flex-col gap-6 w-full">
-              <!-- work history cards -->
+            <!-- work history cards -->
+            <div class="p-4 border border-gray-300 rounded-xl flex flex-col gap-6">
+              <div class="flex gap-8 lg:gap-16">
+                <div class="h-14 w-14 border border-gray-300 p-2 rounded-xl bg-white md:h-16 md:w-16 lg:h-20 lg:w-20">
+                  <img class="h-full w-full object-cover"
+                    src="https://framerusercontent.com/images/CQOl0SejETSx603fjdnvyz4eiKM.png?width=122&height=122"
+                    alt="" />
+                </div>
+                <div>
+                  <h2 class="text-black md:text-lg font-semibold">Arab Federation of Capital Markets (AFCM)</h2>
+                  <p class="text-xs md:text-sm text-neutral-500 font-medium mt-1 md:mt-0">
+                    Senior Visual Designer | UI/UX Designer
+                  </p>
+                  <p class="text-xs md:text-sm text-neutral-500 mt-2 font-medium">
+                    Jan 2020 - Dec 2020
+                  </p>
+                </div>
+              </div>
+              <!-- sub details section  -->
+              <div class="lg:ml-36">
+                <div class="border-b pb-4 border-gray-300">
+                  <p class="text-sm/6 md:text-base text-neutral-700 font-medium text-justify">
+                    The AFCM is the Arab industry group for 17 exchanges and 8 Clearing houses (CSD's), and multiple of
+                    affiliate members
+                    (financial institutions, brokerage firms) from all around the Arab regions (GCC, Levant, and Arab
+                    African countries).
+                    The Federation was set up to contribute to the “development of regulations and promoting harmonized
+                    and proactive
+                    legislations, and exchanging viewpoints and providing opportunities for cooperation among members.
+                  </p>
+                </div>
+                <div class="flex gap-3 flex-wrap pt-4">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Fintech</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Full
+                    Time</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Lebanon</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- work history cards -->
+            <div class="p-4 border border-gray-300 rounded-xl flex flex-col gap-6">
+              <div class="flex gap-8 lg:gap-16">
+                <div class="h-14 w-14 border border-gray-300 p-2 rounded-xl bg-white md:h-16 md:w-16 lg:h-20 lg:w-20">
+                  <img class="h-full w-full object-cover"
+                    src="https://framerusercontent.com/images/ufjBn75UTReY1m7z7y5fboUiBM.png?width=122&height=122"
+                    alt="" />
+                </div>
+                <div>
+                  <h2 class="text-black md:text-lg font-semibold">SADER</h2>
+                  <p class="text-xs md:text-sm text-neutral-500 font-medium mt-1 md:mt-0">
+                    Senior Graphic Designer
+                  </p>
+                  <p class="text-xs md:text-sm text-neutral-500 mt-2 font-medium">
+                    Apr 2019 - Jan 2020
+                  </p>
+                </div>
+              </div>
+              <!-- sub details section  -->
+              <div class="lg:ml-36">
+                <div class="border-b pb-4 border-gray-300">
+                  <p class="text-sm/6 md:text-base text-neutral-700 font-medium text-justify">
+                    SADER & Associates is a Lebanon-based law firm, founded in 2003, with a progressive outlook on the
+                    region's legal
+                    significance. In a globalized age of interlocking, complex business structures and collaborations,
+                    our aim is to
+                    simplify and protect the interests of our clients, chiefly made up of multinational corporations who
+                    seek to do business
+                    in the Levant.
+                  </p>
+                </div>
+                <div class="flex gap-3 flex-wrap pt-4">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Legal</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Full
+                    Time</span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm text-neutral-800">Lebanon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ============================ History section End =============================-->
+
+      <!-- ============================ Education section start =============================-->
+      <div
+        class="px-4 my-12 flex flex-col items-center md:items-start md:px-8 md:my-20 lg:px-14 lg:flex-row lg:gap-4 lg:my-14 xl:px-30 xl:my-30">
+        <section class="w-full flex flex-col lg:flex-row gap-4 items-start">
+          <!-- Sticky title -->
+          <div
+            class="text-3xl w-full text-center lg:text-4xl lg:text-left lg:min-w-60 lg:max-w-60 font-semibold mb-4 lg:text-wrap lg:sticky lg:top-20">
+            Education & Courses
+          </div>
+
+          <!-- Scrollable cards -->
+          <div class="flex flex-col gap-6 w-full">
+            <!-- work history cards -->
+            <div class="p-4 w-full border border-gray-300 rounded-xl">
+              <div class="flex gap-6">
+                <div class="h-16 w-16 min-w-16 border border-gray-300 p-2 rounded-2xl bg-white md:h-20 md:min-w-20 ">
+                  <img src="https://framerusercontent.com/images/I8FuWmchGkIdO42iRslvmQBnM.png?width=122&height=122"
+                    alt="" />
+                </div>
+                <div class="border-b pb-2 border-gray-300 w-full">
+                  <h2 class="text-black text-base font-semibold md:text-lg">
+                    Lebanese International University
+                  </h2>
+                  <p class="text-sm text-neutral-500 font-medium mt-1 md:text-base">
+                    Design
+                  </p>
+                </div>
+              </div>
               <div>
-                <div>
-                  <h3 class="mb-4 text-lg text-black font-semibold">Product</h3>
-                  <div
-                    class="p-4 border border-gray-300 rounded-xl flex gap-4 flex-wrap"
-                  >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Lean UX
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Agile Methodology
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Data Analysis
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Startups
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Data-Driven Design
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      User Centered Design
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      UI Kits
-                    </span>
-                  </div>
-                </div>
-                <div>
-                  <h3 class="my-4 text-lg text-black font-semibold">
-                    UX Design
-                  </h3>
-                  <div
-                    class="p-4 border border-gray-300 rounded-xl flex gap-4 flex-wrap"
-                  >
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      User Interviews
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Empathy Maps
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      User Stories
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Usability Testing
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      A/B Testing
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Mind Mapping
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Surveys
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      User Journey Maps
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Information Architecture
-                    </span>
-                    <span
-                      class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs text-neutral-800"
-                    >
-                      Information Architecture
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- ============================ Skills section End =============================-->
-
-        <!-- ============================ Design and Development section Start =============================-->
-        <div class="sm:px-8 xl:px-30">
-          <div class="flex sm:flex-col xl:flex-row justify-between gap-10">
-            <div class="flex flex-col sm:gap-10 justify-between max-w-lg">
-              <div>
-                <h1 class="text-4xl font-semibold text-neutral-900 mb-4">
-                  Design & Development Toolbox
-                </h1>
-                <p class="text-lg text-neutral-600 font-medium">
-                  A comprehensive suite of tools that I use to design,
-                  prototype, and bring ideas to life.
+                <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium md:text-sm">
+                  Oct 2017 - Feb 2020
                 </p>
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 mt-4 bg-black px-4 py-2 rounded-full shadow"
-                >
-                  <span class="text-white font-semibold">Let's Talk</span>
-                  <button class="bg-white rounded-full p-1 -mr-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                      />
-                    </svg>
-                  </button>
-                </a>
+                <p class="text-sm text-neutral-700 font-medium md:text-base">
+                  Completed a BA Certificate in Graphic Design and applied
+                  arts at Lebanese international university.
+                </p>
               </div>
-
-              <div class="flex gap-18">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5 stroke-gray-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5 stroke-gray-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5 stroke-gray-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-5 stroke-gray-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
+            </div>
+            <!-- work history cards -->
+            <div class="p-4 w-full border border-gray-300 rounded-xl">
+              <div class="flex gap-6">
+                <div class="h-16 w-16 min-w-16 border border-gray-300 p-2 rounded-2xl bg-white md:h-20 md:min-w-20">
+                  <img src="https://framerusercontent.com/images/w37pkt2iPi81DdLCbuXD3orIIE.png?width=122&height=122"
+                    alt="" />
+                </div>
+                <div class="border-b pb-2 border-gray-300 w-full">
+                  <h2 class="text-black text-base font-semibold md:text-lg">Google</h2>
+                  <p class="text-sm text-neutral-500 font-medium mt-1 md:text-base">
+                    UX Design Certificate
+                  </p>
+                </div>
               </div>
-
               <div>
-                <div class="flex items-center gap-2 mt-3">
-                  <div
-                    class="bg-black text-white text-xs font-medium h-7 w-7 rounded-full flex justify-center items-center"
-                  >
-                    01
-                  </div>
-                  <p>Design systems that scale with your product</p>
+                <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium md:text-sm">
+                  April 2021
+                </p>
+                <p class="text-sm text-neutral-700 font-medium md:text-base">
+                  Completed a BA Certificate in Graphic Design and applied
+                  arts at Lebanese international university.
+                </p>
+              </div>
+            </div>
+            <!-- work history cards -->
+            <div class="p-4 w-full border border-gray-300 rounded-xl">
+              <div class="flex gap-6">
+                <div class="h-16 w-16 min-w-16 border border-gray-300 p-2 rounded-2xl bg-white md:h-20 md:min-w-20">
+                  <img src="https://framerusercontent.com/images/DdHIqq8HkzC7ZJujwXaHtW70uk.png?width=122&height=122"
+                    alt="" />
                 </div>
-                <div class="flex items-center gap-2 mt-3">
-                  <div
-                    class="bg-black text-white text-xs font-medium h-7 w-7 rounded-full flex justify-center items-center"
-                  >
-                    02
-                  </div>
-                  <p>Rapid prototyping to validate ideas fast</p>
-                </div>
-                <div class="flex items-center gap-2 mt-3">
-                  <div
-                    class="bg-black text-white text-xs font-medium h-7 w-7 rounded-full flex justify-center items-center"
-                  >
-                    03
-                  </div>
-                  <p>Pixel-perfect delivery for launch-ready apps & websites</p>
+                <div class="border-b pb-2 border-gray-300 w-full">
+                  <h2 class="text-black text-base font-semibold md:text-lg">
+                    Interaction Design Foundation
+                  </h2>
+                  <p class="text-sm text-neutral-500 font-medium mt-1 md:text-base">
+                    UX Design
+                  </p>
                 </div>
               </div>
+              <div>
+                <p class="text-xs text-neutral-500 mt-4 mb-2 font-medium md:text-sm">
+                  September 2021
+                </p>
+                <p class="text-sm text-neutral-700 font-medium md:text-base">
+                  Completed a BA Certificate in Graphic Design and applied
+                  arts at Lebanese international university.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ============================ Education section End =============================-->
+
+      <!-- ============================ Skills section start =============================-->
+      <div
+        class="px-4 my-12 flex flex-col items-center md:items-start md:px-8 md:my-20 lg:px-14 lg:flex-row lg:gap-4 lg:my-14 xl:px-30 xl:my-30">
+        <section class="w-full flex flex-col lg:flex-row gap-4 items-start">
+          <!-- Sticky title -->
+          <div
+            class="text-3xl w-full text-center lg:text-4xl lg:text-left lg:min-w-60 lg:max-w-60 font-semibold mb-4 lg:text-wrap lg:sticky lg:top-20">
+            Skill Set
+          </div>
+
+          <!-- Scrollable cards -->
+          <div class="flex flex-col gap-6 w-full">
+            <!-- work history cards -->
+            <div>
+              <div>
+                <h3 class="mb-4 text-lg text-black font-semibold">Product</h3>
+                <div class="p-4 border border-gray-300 rounded-xl flex gap-4 flex-wrap">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Lean UX
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Agile Methodology
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Data Analysis
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Startups
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Data-Driven Design
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    User Centered Design
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    UI Kits
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h3 class="my-4 text-lg text-black font-semibold">
+                  UX Design
+                </h3>
+                <div class="p-4 border border-gray-300 rounded-xl flex gap-4 flex-wrap">
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    User Interviews
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Empathy Maps
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    User Stories
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Usability Testing
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    A/B Testing
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Mind Mapping
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Surveys
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    User Journey Maps
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Information Architecture
+                  </span>
+                  <span
+                    class="border border-gray-300 rounded-full px-3 py-2 bg-white shadow-3xs text-xs md:text-sm md:px-4 text-neutral-800">
+                    Information Architecture
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ============================ Skills section End =============================-->
+
+      <!-- ============================ Design and Development section Start =============================-->
+      <div class="px-4 my-12 md:px-8 lg:px-14 xl:px-30">
+        <div class="">
+          <div class="flex flex-col gap-10 justify-between">
+            <div>
+              <h1 class="text-3xl md:text-4xl font-semibold text-neutral-900 mb-4">
+                Design & Development Toolbox
+              </h1>
+              <p class="text-sm md:text-base xl:text-lg text-neutral-600 font-medium">
+                A comprehensive suite of tools that I use to design,
+                prototype, and bring ideas to life.
+              </p>
+              <a href="#" class="inline-flex items-center gap-2 mt-4 bg-black px-4 py-2 rounded-full shadow">
+                <span class="text-white text-sm font-semibold">Let's Talk</span>
+                <button class="bg-white rounded-full p-1 -mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </a>
+            </div>
+
+            <div class="flex gap-8">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 md:size-4 xl:size-6 stroke-gray-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 md:size-4 xl:size-6 stroke-gray-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 md:size-4 xl:size-6 stroke-gray-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 md:size-4 xl:size-6 stroke-gray-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
             </div>
 
             <div>
-              <div
-                class="flex sm:flex-col xl:flex-row items-center justify-center xl:gap-8 overflow-hidden"
-              >
-                <div class="marquee-vertical">
-                  <div
-                    class="marquee-inner-vertical flex sm:flex-row sm:gap-10 xl:flex-col xl:gap-4"
-                  >
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/adobe_after.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/adobe_xd.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/ai_logo.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/figma.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/framer_logo.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/google_ads.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/adobe_after.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/adobe_xd.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/ai_logo.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/figma.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/framer_logo.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/google_ads.jpg"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
+              <div class="flex items-center gap-2 mt-3">
+                <div
+                  class="bg-black text-white text-xs font-medium size-7 md:size-8 xl:size-9 rounded-full flex justify-center items-center">
+                  01
                 </div>
-
-                <div class="marquee-vertical">
-                  <div
-                    class="marquee-inner-vertical-two flex sm:flex-row sm:gap-10 xl:flex-col xl:gap-4"
-                  >
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/mac_update.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/notion_logo.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/photoshop.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/shopify.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/tools.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/mac_update.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/notion_logo.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/photoshop.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/shopify.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/tools.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/framer_logo.jpg"
-                        alt="image"
-                      />
-                    </div>
-                    <div
-                      class="border border-gray-300 h-24 w-24 rounded-2xl overflow-hidden"
-                    >
-                      <img
-                        class="h-full w-full object-cover"
-                        src="assets/google_ads.jpg"
-                        alt="image"
-                      />
-                    </div>
-                  </div>
+                <p class="text-sm md:text-base xl:text-lg font-medium">Design systems that scale with your product</p>
+              </div>
+              <div class="flex items-center gap-2 mt-3">
+                <div
+                  class="bg-black text-white text-xs font-medium size-7 md:size-8 xl:size-9 rounded-full flex justify-center items-center">
+                  02
                 </div>
+                <p class="text-sm md:text-base xl:text-lg font-medium">Rapid prototyping to validate ideas fast</p>
+              </div>
+              <div class="flex items-center gap-2 mt-3">
+                <div
+                  class="bg-black text-white text-xs font-medium size-7 md:size-8 xl:size-9 rounded-full flex justify-center items-center">
+                  03
+                </div>
+                <p class="text-sm md:text-base xl:text-lg font-medium">Pixel-perfect delivery for launch-ready apps &
+                  websites</p>
               </div>
             </div>
           </div>
-        </div>
-        <!-- ============================ Design and Development section End =============================-->
 
-        <!-- ============================ Latest Work section Start =============================-->
-        <div class="sm:px-8 sm:py-30 xl:p-30">
-          <div class="text-center">
-            <h1 class="text-4xl font-medium mb-5">Latest Work</h1>
-            <p class="text-lg text-neutral-500 font-medium">
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Design and Development section End =============================-->
+
+      <!-- ============================ Latest Work section Start =============================-->
+      <div class="px-4 my-12 md:px-8 lg:px-14 xl:px-30">
+        <div class="flex justify-center">
+          <div class="lg:max-w-xl text-center">
+            <h1 class="text-3xl md:text-4xl font-semibold mb-4">Latest Work</h1>
+            <p class="text-sm md:text-base text-neutral-500 font-medium">
               Grovia has partnered with growing businesses to build foundations
               for sustainable success. Explore real stories of transformation.
             </p>
           </div>
+        </div>
 
-          <div>
+        <div>
+          <div
+            class="grid grid-cols-1 grid-rows-4 gap-4 bg-gray-100 p-2 md:p-3 rounded-2xl mt-8 md:grid-cols-2 md:grid-rows-2">
+            <!-- Work project cards  -->
             <div
-              class="grid sm:grid-cols-1 sm:grid-rows-4 xl:grid-cols-2 xl:grid-rows-2 gap-4 bg-gray-100 p-3 rounded-2xl mt-8 xl:max-h-[75rem] sm:max-h-auto"
-            >
-              <div
-                class="bg-white rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col gap-2 hover:cursor-pointer"
-              >
-                <div class="relative">
-                  <img
-                    class="rounded-xl h-96 w-full object-center object-cover"
-                    src="https://framerusercontent.com/images/0HHRuhDbGSnpWeod2XjdoJqQYx4.jpg?scale-down-to=1024&width=1500&height=1071"
-                    alt="Image"
-                  />
-                  <span
-                    class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium"
-                    >2025</span
-                  >
-                </div>
-                <div class="p-6">
-                  <h1 class="text-2xl font-medium mb-3">Right Hands</h1>
-                  <p class="text-neutral-500 font-medium">
-                    Right Hands is an on-demand home services app offering
-                    cleaning, laundry, pest control and more services.
-                  </p>
-                </div>
+              class="bg-white h-fit rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col justify-between gap-2 hover:cursor-pointer">
+              <div class="relative max-h-44 h-full overflow-hidden rounded-xl md:max-h-56 xl:max-h-68">
+                <img class="h-44 w-full object-cover md:h-56 xl:h-68"
+                  src="https://framerusercontent.com/images/0HHRuhDbGSnpWeod2XjdoJqQYx4.jpg?scale-down-to=1024&width=1500&height=1071"
+                  alt="Image" />
+                <span
+                  class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium">2025</span>
               </div>
-
-              <div
-                class="bg-white rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col gap-2 hover:cursor-pointer"
-              >
-                <div class="relative">
-                  <img
-                    class="rounded-xl h-96 w-full object-center object-cover"
-                    src="https://framerusercontent.com/images/8EwVBwStSNhRBcXpofwng49cako.jpg?scale-down-to=1024&width=5376&height=3584"
-                    alt="Image"
-                  />
-                  <span
-                    class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium"
-                    >2024</span
-                  >
-                </div>
-                <div class="p-6">
-                  <h1 class="text-2xl font-medium mb-3">Hypebox</h1>
-                  <p class="text-neutral-500 font-medium">
-                    Hypebox is an app designed to connect influencers and
-                    business, streamlining the processof collaboration.
-                  </p>
-                </div>
+              <div class="p-3">
+                <h1 class="text-xl font-semibold md:text-2xl">Right Hands</h1>
+                <p class="text-sm mt-3 text-neutral-500 font-medium md:text-base">
+                  Right Hands is an on-demand home services app offering
+                  cleaning, laundry, pest control and more services.
+                </p>
               </div>
+            </div>
 
-              <div
-                class="bg-white rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col gap-2 hover:cursor-pointer"
-              >
-                <div class="relative">
-                  <img
-                    class="rounded-xl h-96 w-full object-center object-cover"
-                    src="https://framerusercontent.com/images/4NGMTLg14sPiqeowvHM01sMiWkc.jpg?scale-down-to=1024&width=5000&height=3333"
-                    alt="Image"
-                  />
-                  <span
-                    class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium"
-                    >2025</span
-                  >
-                </div>
-                <div class="p-6">
-                  <h1 class="text-2xl font-medium mb-3">Tap Payments</h1>
-                  <p class="text-neutral-500 font-medium">
-                    Serving over 100,000 businesses of all sizes, making it easy
-                    for your users to pay using their preferred methods!
-                  </p>
-                </div>
+            <!-- Work project cards  -->
+            <div
+              class="bg-white h-fit rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col justify-between gap-2 hover:cursor-pointer">
+              <div class="relative max-h-44 h-full overflow-hidden rounded-xl md:max-h-56 xl:max-h-68">
+                <img class="h-44 w-full object-cover md:h-56 xl:h-68"
+                  src="https://framerusercontent.com/images/8EwVBwStSNhRBcXpofwng49cako.jpg?scale-down-to=1024&width=5376&height=3584"
+                  alt="Image" />
+                <span
+                  class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium">2024</span>
               </div>
+              <div class="p-3">
+                <h1 class="text-xl font-semibold md:text-2xl">Hypebox</h1>
+                <p class="text-sm mt-3 text-neutral-500 font-medium md:text-base">
+                  Hypebox is an app designed to connect influencers and
+                  business, streamlining the processof collaboration.
+                </p>
+              </div>
+            </div>
 
-              <div
-                class="bg-white rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col gap-2 hover:cursor-pointer"
-              >
-                <div class="relative">
-                  <img
-                    class="rounded-xl h-96 w-full object-center object-cover"
-                    src="assets/food.jpg"
-                    alt="Image"
-                  />
-                  <span
-                    class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium"
-                    >2025</span
-                  >
-                </div>
-                <div class="p-6">
-                  <h1 class="text-2xl font-medium mb-3 uppercase">KASO YC</h1>
-                  <p class="text-neutral-500 font-medium">
-                    KASO is a $30M-backend SaaS platform that connects
-                    restaurants with food suppliers across the MENA region.
-                  </p>
-                </div>
+            <!-- Work project cards  -->
+            <div
+              class="bg-white h-fit rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col justify-between gap-2 hover:cursor-pointer">
+              <div class="relative max-h-44 h-full overflow-hidden rounded-xl md:max-h-56 xl:max-h-68">
+                <img class="h-44 w-full object-cover md:h-56 xl:h-68"
+                  src="https://framerusercontent.com/images/4NGMTLg14sPiqeowvHM01sMiWkc.jpg?scale-down-to=1024&width=5000&height=3333"
+                  alt="Image" />
+                <span
+                  class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium">2025</span>
+              </div>
+              <div class="p-3">
+                <h1 class="text-xl font-semibold md:text-2xl">Tap Payments</h1>
+                <p class="text-sm mt-3 text-neutral-500 font-medium md:text-base">
+                  Serving over 100,000 businesses of all sizes, making it easy
+                  for your users to pay using their preferred methods!
+                </p>
+              </div>
+            </div>
+
+            <!-- Work project cards  -->
+            <div
+              class="bg-white h-fit rounded-2xl p-2 shadow hover:shadow-xl transition flex flex-col justify-between gap-2 hover:cursor-pointer">
+              <div class="relative max-h-44 h-full overflow-hidden rounded-xl md:max-h-56 xl:max-h-68">
+                <img class="h-44 w-full object-cover md:h-56 xl:h-68" src="assets/food.jpg" alt="Image" />
+                <span
+                  class="absolute bg-[#0000004C] bottom-2 right-4 rounded-full px-4 py-2 text-xs text-neutral-100 font-medium">2025</span>
+              </div>
+              <div class="p-3">
+                <h1 class="text-xl font-semibold md:text-2xl">KASO YC</h1>
+                <p class="text-sm mt-3 text-neutral-500 font-medium md:text-base">
+                  KASO is a $30M-backend SaaS platform that connects
+                  restaurants with food suppliers across the MENA region.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- ============================ Latest Work section End =============================-->
       </div>
-    </main>
-    <!-- =========================== Main Section End =========================== -->
+      <!-- ============================ Latest Work section End =============================-->
+    </div>
+  </main>
+  <!-- =========================== Main Section End =========================== -->
 
-    <!-- ======================= footer Section Start ========================== -->
-    <footer>
-      <div class="sm:px-8 xl:px-30">
-        <div class="flex flex-col gap-6 sm:gap-4 items-center sm:px-8 xl:px-30">
-          <div>
-            <span class="text-[1.7rem] font-bold text-gray-900">Ribal</span>
-            <span class="text-[1.7rem] font-bold text-gray-500">Sh.</span>
-          </div>
-          <h1 class="text-4xl font-medium mb-5">Let's Talk</h1>
-          <p class="text-lg text-neutral-500 font-medium text-center">
-            Interested in discussing design, sharing ideas, or exploring
-            innovations in product design? Feel free to reach out—let's keep the
-            conversation going.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center gap-2 mt-4 bg-black px-4 py-2 rounded-full shadow"
-          >
-            <span class="text-white font-semibold">Let's Talk</span>
-            <button class="bg-white rounded-full p-1 -mr-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </button>
-          </a>
+  <!-- ======================= footer Section Start ========================== -->
+  <footer id="contact-me">
+    <div
+      class="px-4 mt-12 flex flex-col items-center md:items-center md:px-8 md:mt-20 lg:px-14 lg:gap-4 xl:px-30 xl:mt-30">
+      <div class="w-full flex flex-col gap-2 items-center xl:max-w-2xl">
+        <div>
+          <span class="text-[1.4rem] md:text-[1.6rem] xl:text-[1.7rem] font-bold text-gray-900">Ribal</span>
+          <span class="text-[1.4rem] md:text-[1.6rem] xl:text-[1.7rem] font-bold text-gray-500">Sh.</span>
         </div>
-        <div class="flex justify-between py-16 mt-6 border-t border-gray-300">
-          <p class="text-lg text-neutral-500 font-medium">
-            © 2025 Ribal Sh. All rights reserved.
-          </p>
-          <div class="flex gap-4">
-            <i class="fa-brands fa-x-twitter text-2xl text-gray-500"></i>
-            <i class="fa-brands fa-linkedin text-2xl text-gray-500"></i>
-            <i class="fa-brands fa-figma text-2xl text-gray-500"></i>
-            <i class="fa-brands fa-dribbble text-2xl text-gray-500"></i>
-            <i class="fa-brands fa-instagram text-2xl text-gray-500"></i>
-          </div>
+        <h1 class="text-2xl md:text-3xl font-semibold mt-2">Let's Talk</h1>
+        <p class="text-sm md:text-base text-neutral-500 font-medium text-center">
+          Interested in discussing design, sharing ideas, or exploring
+          innovations in product design? Feel free to reach out—let's keep the
+          conversation going.
+        </p>
+        <a href="#" class="inline-flex items-center gap-2 mt-4 bg-black px-4 py-2 rounded-full shadow md:px-5">
+          <span class="text-white text-sm md:text-base font-semibold">Let's Talk</span>
+          <button class="bg-white rounded-full p-1 -mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-4 md:size-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </a>
+      </div>
+      <div
+        class="w-full flex flex-col-reverse items-center gap-4 py-4 mt-8 border-t border-gray-300 md:flex-row md:justify-between">
+        <p class="text-sm text-neutral-500 font-medium">
+          © 2025 Ribal Sh. All rights reserved.
+        </p>
+        <div class="flex gap-4">
+          <i class="fa-brands fa-x-twitter text-xl text-gray-500 hover:cursor-pointer"></i>
+          <i class="fa-brands fa-linkedin text-xl text-gray-500 hover:cursor-pointer"></i>
+          <i class="fa-brands fa-figma text-xl text-gray-500 hover:cursor-pointer"></i>
+          <i class="fa-brands fa-dribbble text-xl text-gray-500 hover:cursor-pointer"></i>
+          <i class="fa-brands fa-instagram text-xl text-gray-500 hover:cursor-pointer"></i>
         </div>
       </div>
-    </footer>
-    <!-- ======================= footer Section End ========================== -->
-  </body>
+    </div>
+  </footer>
+  <!-- ======================= footer Section End ========================== -->
+
+
+  <script src="./javascript/script.js"></script>
+</body>
+
 </html>
-
